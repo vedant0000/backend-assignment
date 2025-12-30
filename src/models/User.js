@@ -19,7 +19,7 @@ const userSchema = new mongoose.Schema(
             minlength: 6
         },
         role: {
-            type: Sting,
+            type: String,
             enum: ["user", "admin"],
             default: "user"
         }
