@@ -63,12 +63,18 @@ Frontend UI will run at: http://localhost:5173
 ### 🖥 Frontend Functionality
 ### User
 Register and login
+
 View own tasks
+
 Logout
 
 ### Admin
 View all users (email + ObjectId)
+
 Add task for specific user
+
 Delete a user
+
 View all tasks
+
 UI adapts based on role decoded from JWT
