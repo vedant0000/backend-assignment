@@ -1,9 +1,9 @@
 import { useState } from "react";
 import Login from "./Login";
 import Register from "./Register";
-import './MainPage.css';
+import "./MainPage.css";
 
-const MainPage = () => {
+const MainPage = ({ onLoginSuccess }) => {
   const [isLogin, setIsLogin] = useState(true);
 
   const toggleForm = (e) => {
@@ -13,7 +13,11 @@ const MainPage = () => {
 
   return (
     <div className="form-container">
-      {isLogin ? <Login /> : <Register />}
+      {isLogin ? (
+        <Login onLoginSuccess={onLoginSuccess} />
+      ) : (
+        <Register />
+      )}
 
       <a href="#" id="new-user" onClick={toggleForm}>
         {isLogin

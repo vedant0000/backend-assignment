@@ -19,9 +19,9 @@ body {
     padding-bottom: 3.4rem;
     padding-left: 2.5rem;
     padding-right: 2.5rem;
-    background: rgba(186, 186, 186, 0.225);
+    background: rgb(239, 239, 239);
     box-shadow: 0 4px 30px rgb(0, 0, 0);
-    border: 0.5px solid rgba(0, 0, 0, 0.23);
+    border: 1px solid rgba(0, 0, 0, 0.538);
     border-radius: 1rem;
 }
 

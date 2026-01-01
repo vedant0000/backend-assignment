@@ -1,7 +1,7 @@
 import api from "../services/api";
-import './style.css';
+import "./style.css";
 
-export default function Login() {
+export default function Login({ onLoginSuccess }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -14,10 +14,10 @@ export default function Login() {
     try {
       const res = await api.post("/auth/login", data);
       localStorage.setItem("token", res.data.token);
-      alert("Login successful");
+      onLoginSuccess();
     } catch (err) {
-        console.error(err.response?.data || err.message);
-        alert(err.response?.data?.message || "Request failed");
+      console.error(err.response?.data || err.message);
+      alert(err.response?.data?.message || "Request failed");
     }
   };
 
