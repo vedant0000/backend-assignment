@@ -1,4 +1,5 @@
 import api from "../services/api";
+import './style.css';
 
 export default function Register() {
   const handleSubmit = async (e) => {

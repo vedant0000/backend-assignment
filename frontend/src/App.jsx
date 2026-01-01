@@ -1,13 +1,10 @@
-import Register from "./pages/Register";
-import Login from "./pages/Login";
-import Dashboard from "./pages/Dashboard";
+import MainPage from "./pages/MainPage";
+import './App.css'
 
 export default function App() {
   return (
     <>
-      <Register />
-      <Login />
-      <Dashboard />
+      <MainPage/>
     </>
   );
 }

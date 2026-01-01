@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3.4rem;
+    padding-bottom: 3.4rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    background: rgba(186, 186, 186, 0.225);
+    box-shadow: 0 4px 30px rgb(0, 0, 0);
+    border: 0.5px solid rgba(0, 0, 0, 0.23);
+    border-radius: 1rem;
+}
+
+.form-container #new-user {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin-top: 1rem;
+}
